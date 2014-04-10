@@ -745,7 +745,7 @@ public class InformationTheoreticCoClustering {
 			
 			fullGC();
 			
-			// find totally cost
+			// find total cost
 			cost = 0.0;
 			for (int i = 0; i < rowNum; ++i) {
 				for (int j = 0; j < columnNum; ++j) {
