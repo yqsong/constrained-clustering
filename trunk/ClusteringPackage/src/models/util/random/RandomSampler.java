@@ -1,6 +1,8 @@
 package models.util.random;
 
-public class RandomSampler extends MalletRandoms{
+import cc.mallet.util.Randoms;
+
+public class RandomSampler {
 
 	/**
 	 * 
@@ -33,10 +35,11 @@ public class RandomSampler extends MalletRandoms{
 	}
 	
 	public double[] nextGamma(double[] alpha){
+		Randoms r = new Randoms();
 		//sampling from a gamma distribution with shape alpha and scale 1
 		double[] res = new double[alpha.length];
 		for(int i = 0; i < alpha.length; i++){
-			res[i] = nextGamma(alpha[i], 1);
+			res[i] = r.nextGamma(alpha[i], 1);
 		}
 		return res;
 	}
@@ -113,9 +116,10 @@ public class RandomSampler extends MalletRandoms{
 	}
 	
 	public double[] nextSphericalGaussian(double[] mu, double sigma2){
+		Randoms r = new Randoms();
 		double[] res = new double[mu.length];
 		for(int i = 0; i < mu.length; i++){
-			res[i] = nextGaussian(mu[i], sigma2);
+			res[i] = r.nextGaussian(mu[i], sigma2);
 		}
 		return res;
 	}
