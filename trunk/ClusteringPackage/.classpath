@@ -20,7 +20,6 @@
 	<classpathentry kind="lib" path="lib/commons-logging-1.1.1/commons-logging-1.1.1-sources.jar"/>
 	<classpathentry kind="lib" path="lib/commons-logging-1.1.1/commons-logging-adapters-1.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/commons-logging-1.1.1/commons-logging-api-1.1.1.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/ESA-Lucene"/>
 	<classpathentry kind="lib" path="lib/lucene-core-3.0.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
